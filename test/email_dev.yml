@@ -1,0 +1,19 @@
+---
+type: Handler
+api_version: core/v2
+metadata:
+  name: email_dev
+  namespace: default
+spec:
+  command: sensu-email-handler -f cameron@sensu.io -t cameron+dev@sensu.io -s smtp.gmail.com
+    -u cameron@sensu.io -p msyhfcltmspifkti
+  env_vars: null
+  filters:
+  - is_incident
+  - not_silenced
+  - contact_dev
+  handlers: null
+  runtime_assets:
+  - sensu-email-handler
+  timeout: 10
+  type: pipe

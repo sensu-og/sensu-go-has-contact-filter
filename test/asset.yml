@@ -1,0 +1,10 @@
+---
+type: Asset
+api_version: core/v2
+metadata:
+  name: has_contact
+  namespace: default
+spec:
+  filters: []
+  sha512: b410f833385b9bb10d35cd0f4653117e4e861adb588466afb6b3bfb22253268e683aa6c0c79135e587458e8e5e8d2bde93bd683f937a0853841f8a6cf6b9e8b5
+  url: http://127.0.0.1/hasContact.tar.gz

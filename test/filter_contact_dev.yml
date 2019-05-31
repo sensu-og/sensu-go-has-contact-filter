@@ -1,0 +1,12 @@
+---
+type: EventFilter
+api_version: core/v2
+metadata:
+  name: contact_dev
+  namespace: default
+spec:
+  action: allow
+  runtime_assets:
+    - has_contact
+  expressions:
+    - hasContact(event, "dev")
