@@ -9,4 +9,4 @@ spec:
   runtime_assets:
     - has_contact
   expressions:
-    - hasContact(event, "dev")
+    - has_contact(event, "dev")

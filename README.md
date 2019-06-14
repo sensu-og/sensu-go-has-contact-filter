@@ -1,4 +1,4 @@
-# sensu-go-hasContact filter
+# sensu-go-has-contact-filter
 
 This project implements an event filter for Sensu Go to provide contact routing capabilities. The project is currently a work in progress and not guaranteed to work as intended.
 
