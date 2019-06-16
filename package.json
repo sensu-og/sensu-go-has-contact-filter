@@ -1,0 +1,32 @@
+{
+  "name": "sensu-go-has-contact-filter",
+  "version": "0.1.0",
+  "description": "This project implements an event filter for Sensu Go to provide contact routing capabilities. The project is currently a work in progress and not guaranteed to work as intended.",
+  "main": "lib/has_contact.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "jasmine": "^3.4.0"
+  },
+  "devDependencies": {
+    "karma": "^4.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^2.0.0",
+    "karma-jasmine": "^2.0.1"
+  },
+  "scripts": {
+    "test": "karma start karma.conf.js --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwjohnston/sensu-go-has-contact-filter.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cwjohnston/sensu-go-has-contact-filter/issues"
+  },
+  "homepage": "https://github.com/cwjohnston/sensu-go-has-contact-filter#readme"
+}
