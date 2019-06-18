@@ -2,10 +2,10 @@ describe("has_contact", function() {
     it("returns false when event has no labels", function() {
         var event = {}
 
-        expect(has_contact(event,"")).toBe(false);
+        expect(has_contact(event,"any")).toBe(false);
     });
 
-    it("returns false when event has only some labels", function() {
+    it("returns false when event has only some of the expected labels", function() {
         var event = {
             check: {},
             entity: {
@@ -13,7 +13,35 @@ describe("has_contact", function() {
             }
         };
 
-        expect(has_contact(event,"")).toBe(false);
+        expect(has_contact(event, "any")).toBe(false);
+    });
+
+    it("returns true when event only has entity contacts, one of which matches", function() {
+        var contact = "bar"
+        var event = {
+            check: {},
+            entity: {
+                labels: {
+                    contacts: `foo,${contact},baz`
+                }
+            }
+        };
+
+        expect(has_contact(event, contact)).toBe(true);
+    });
+
+    it("returns true when event only has check contacts, one of which matches", function() {
+        var contact = "bar"
+        var event = {
+            check: {
+                labels: {
+                    contacts: `foo,${contact},baz`
+                }
+            },
+            entity: {}
+        };
+
+        expect(has_contact(event, contact)).toBe(true);
     });
 
     it("returns false when check and entity labels are empty", function() {
@@ -26,7 +54,7 @@ describe("has_contact", function() {
             }
         };
 
-        expect(has_contact(event, "")).toBe(false);
+        expect(has_contact(event, "any")).toBe(false);
     });
 
     it("returns true when check contacts match exactly", function() {
