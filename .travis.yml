@@ -12,9 +12,10 @@ cache:
   yarn: true
   directories:
     - node_modules
-- provider: script
-  script: bin/build.sh
-  skip_cleanup: true
-  on:
-    tags: true
-    branch: master
+deploy:
+  - provider: script
+    script: bin/build.sh
+    skip_cleanup: true
+    on:
+      tags: true
+      branch: master
