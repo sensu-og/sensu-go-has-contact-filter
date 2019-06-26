@@ -16,7 +16,7 @@ The `no_contacts` function accepts the event object as its sole argument. This f
 ## Installation
 
 1. Download the asset definition for the latest release from [Bonsai].
-2. Install the asset definition using sensuctl (e.g. `sensuctl create -f cwjohnston-sensu-go-has-contact-filter-0.1.2-any-noarch.yml`)
+2. Install the asset definition using sensuctl (e.g. `sensuctl create -f sensu-sensu-go-has-contact-filter-0.1.2-any-noarch.yml`)
 
 ## Configuration
 
@@ -169,5 +169,6 @@ See the included [contact routing pattern diagram][diagram] for a visual descrip
 [sgo]: https://sensu.io/
 [handlers]: https://docs.sensu.io/sensu-go/latest/reference/handlers/
 [filters]: https://docs.sensu.io/sensu-go/latest/reference/filters/
-[bonsai]: https://bonsai.sensu.io/assets/cwjohnston/sensu-go-has-contact-filter
-[diagram]: https://raw.githubusercontent.com/cwjohnston/sensu-go-has-contact-filter/master/contact_routing_pattern.png
+[bonsai]: https://bonsai.sensu.io/assets/sensu/sensu-go-has-contact-filter
+[diagram]: https://raw.githubusercontent.com/sensu/sensu-go-has-contact-filter/master/contact_routing_pattern.png
+[runtime asset]: https://docs.sensu.io/sensu-go/latest/reference/assets/
