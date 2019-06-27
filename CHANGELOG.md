@@ -1,8 +1,10 @@
 # Change Log
 
 ## [Unreleased](https://github.com/sensu/sensu-go-has-contact-filter/tree/HEAD)
+[Full Changelog](https://github.com/sensu/sensu-go-has-contact-filter/compare/0.2.0...HEAD)
 
-[Full Changelog](https://github.com/sensu/sensu-go-has-contact-filter/compare/0.1.2...HEAD)
+## [0.2.0](https://github.com/sensu/sensu-go-has-contact-filter/tree/0.2.0) (2019-06-26)
+[Full Changelog](https://github.com/sensu/sensu-go-has-contact-filter/compare/0.1.2...0.2.0)
 
 - `has_contact` function now disregards entity contacts when any check contacts are defined.
 - Added `no_contacts` function. Use this when defining a "default" handler which is used when no contacts are defined.
