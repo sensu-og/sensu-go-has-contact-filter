@@ -108,4 +108,22 @@ describe("has_contact", function() {
 
         expect(has_contact(event, contact)).toBe(true);
     });
+
+    it("returns false when check has contacts which do not match and entity contains contacts that do match", function() {
+        var contact = "qux"
+        var event = {
+            entity: {
+                labels: {
+                    contacts: `foo,${contact},bar`
+                }
+            },
+            check: {
+                labels: {
+                    contacts: "baz"
+                }
+            }
+        }
+
+        expect(has_contact(event, contact)).toBe(false);
+    });
 });
