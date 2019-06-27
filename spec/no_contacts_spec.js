@@ -54,4 +54,16 @@ describe("no_contacts", function() {
 
         expect(no_contacts(event)).toBe(true);
     });
+
+    it("returns true when labels are empty strings", function() {
+        var event = {
+            check: {
+                labels: {
+                    contacts: ""
+                }
+            }
+        }
+
+        expect(no_contacts(event)).toBe(true);
+    });
 });
